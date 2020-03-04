@@ -1,12 +1,13 @@
 import React from "react";
 import {action} from "@storybook/addon-actions";
+import storyDefaults from "./.stories"
 
 import Task from "./Task";
 
 export default {
+    ...storyDefaults,
     component: Task,
     title: 'Task',
-    excludeStories: /.*Data$/,
 };
 
 export const taskData = {
