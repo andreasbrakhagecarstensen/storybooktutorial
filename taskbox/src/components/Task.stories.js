@@ -21,14 +21,8 @@ export const actionsData = {
     onArchiveTask: action('onArchiveTask'),
 };
 
-export const Default = ()=> {
-    return <Task task={{...taskData}} {...actionsData} />
-}
+export const Default = ()=> <Task task={{...taskData}} {...actionsData} />;
 
-export const Pinned = () => {
-    return <Task task={{...taskData, state: 'TASK_PINNED'}} {...actionsData}/>
-}
+export const Pinned = () => <Task task={{...taskData, state: 'TASK_PINNED'}} {...actionsData}/>;
 
-export const Archived = () => {
-    return <Task task={{...taskData, state: 'TASK_ARCHIVED'}} {...actionsData}/>
-}
+export const Archived = () => <Task task={{...taskData, state: 'TASK_ARCHIVED'}} {...actionsData}/>;
